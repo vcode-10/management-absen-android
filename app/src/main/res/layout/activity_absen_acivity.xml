@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AbsenAcivity">
+
+    <!-- Bagian atas untuk kamera -->
+    <FrameLayout
+        android:id="@+id/cameraContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView
+            android:id="@+id/barcodeScannerView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+
+    </FrameLayout>
+
+    <!-- Bagian bawah untuk informasi scan -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keterangan:"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewIdLabel"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="20dp"
+                    android:gravity="end"
+                    android:text="NIP:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewIdValue"
+                    android:layout_width="266dp"
+                    android:layout_height="wrap_content"
+                    android:text="Value" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="20dp"
+                    android:gravity="end"
+                    android:text="Nama:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Value" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="20dp"
+                    android:gravity="end"
+                    android:text="Jam:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewTimeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Value" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

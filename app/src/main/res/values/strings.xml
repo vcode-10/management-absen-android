@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">management-absen-android</string>
+    <string name="management_absensi">Management Absensi</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="error">Error</string>
+    <string name="submit">Submit</string>
+    <string name="text_result">Text Result</string>
+</resources>
